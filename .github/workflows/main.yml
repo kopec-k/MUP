@@ -4,6 +4,7 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
+      - run: pip install nbformat
       - run: python -c "print('hello!')"
       - uses: actions/checkout@v7
       - uses: quarto-dev/quarto-actions/setup@v2
