@@ -13,5 +13,5 @@ jobs:
       - run: quarto render mup.ipynb --execute --to pdf
       - uses: actions/upload-artifact@v7
         with:
-          path: raport.pdf
+          path: mup.pdf
           archive: false
