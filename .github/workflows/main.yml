@@ -5,3 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: python -c "print('hello!')"
+      - uses: actions/checkout@v7
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - run: quarto render mup.ipnb --execute --to pdf
